@@ -28,6 +28,8 @@ let action = {type: 'INCREASE_COUNT'}
 changeState(state, action)
 // => {count: 1}
 ```
+* NONE OF THIS CODE WORKED FOR ME IN THE CONSOLE....COPYING INTO NEXT LEARN LAB TO SEE
+* IF I CAN GET IT TO WORK..
 
 
 ## Persisting State
@@ -42,6 +44,8 @@ changeState(state, {type: 'INCREASE_COUNT'})
 changeState(state, {type: 'INCREASE_COUNT'})
 	// => {count: 1}
 ```
+* NONE OF THIS CODE WORKED FOR ME IN THE CONSOLE....COPYING INTO NEXT LEARN LAB TO SEE
+* IF I CAN GET IT TO WORK..
 
 See that? Our state never increases beyond one.  It starts off as zero, and
 while the `changeState` function returns one more than that, if we look at
@@ -87,6 +91,8 @@ dispatch({type: 'INCREASE_COUNT'})
 dispatch({type: 'INCREASE_COUNT'})
 	// => 3
 ```
+* NONE OF THIS CODE WORKED FOR ME IN THE CONSOLE....COPYING INTO NEXT LEARN LAB TO SEE
+* IF I CAN GET IT TO WORK..
 
 Ok, it's fixed!!  Previously our state was stuck at one, but now we just call
 our `dispatch` function, and pass through our action.  Let's walk through it.
@@ -145,6 +151,8 @@ function render(){
 // call the render function
 render()
 ```
+* NONE OF THIS CODE WORKED FOR ME IN THE CONSOLE....COPYING INTO NEXT LEARN LAB TO SEE
+* IF I CAN GET IT TO WORK..
 
 And presto! Our number is displayed on the page.  However, we want to call
 `render` every time our state changes.  And it's safe to say our state will not
@@ -166,6 +174,8 @@ function dispatch(action){
 dispatch({type: 'INCREASE_COUNT'})
 dispatch({type: 'INCREASE_COUNT'})
 ```
+* NONE OF THIS CODE WORKED FOR ME IN THE CONSOLE....COPYING INTO NEXT LEARN LAB TO SEE
+* IF I CAN GET IT TO WORK..
 
 ## Summary
 
@@ -192,6 +202,8 @@ function dispatch(action){
 	render()
 }
 ```
+* NONE OF THIS CODE WORKED FOR ME IN THE CONSOLE....COPYING INTO NEXT LEARN LAB TO SEE
+* IF I CAN GET IT TO WORK..
 
 With just this set of functions, we could actually apply our own Redux pattern
 to a regular ol' JavaScript and HTML webpage!
